@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Body Revolution - Turun Berat Badan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #300049;
+            --secondary: #4A0072;
+            --accent1: #D5B4E7;
+            --accent2: #00838F;
+            --accent3: #00695C;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .nav-bg {
+            background-color: var(--primary);
+        }
+
+        .hero-section {
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            padding: 100px 0;
+            color: white;
+        }
+
+        .testimonial-img {
+            width: 100%;
+            max-height: 500px;
+            object-fit: contain;
+            object-position: center;
+            border-radius: 15px;
+        }
+
+        .coach-img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid var(--accent2);
+        }
+
+        .wa-button {
+            background-color: #25D366;
+            color: white !important;
+            padding: 12px 25px;
+            border-radius: 30px;
+            transition: transform 0.3s;
+        }
+
+        .wa-button:hover {
+            transform: translateY(-3px);
+            color: white;
+        }
+
+        .social-icon {
+            font-size: 24px;
+            margin: 0 10px;
+            transition: transform 0.3s;
+        }
+
+        .social-icon:hover {
+            transform: translateY(-3px);
+        }
+
+        .challenge-section {
+            background-color: var(--accent1);
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .challenge-section h3 {
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .challenge-section ul {
+            display: inline-block;
+            text-align: left;
+            margin-bottom: 30px;
+        }
+
+        .challenge-btn {
+            background-color: #25D366;
+            color: white !important;
+            padding: 12px 30px;
+            border-radius: 12px;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: 500;
+            transition: transform 0.3s;
+        }
+
+        .challenge-btn:hover {
+            transform: translateY(-3px);
+            color: white;
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            filter: invert(1);
+            width: 40px;
+            height: 40px;
+        }
+
+        footer {
+            background-color: var(--primary);
+            color: white;
+            padding: 40px 0;
+        }
+
+        .feature-icon {
+            font-size: 40px;
+            color: var(--accent2);
+            margin-bottom: 20px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .fade-in {
+            animation: fadeIn 1s ease-out;
+        }
+
+        .card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .bg-accent3 {
+            background-color: var(--accent3);
+        }
+
+        .section-line {
+            width: 80%;
+            height: 2px;
+            background-color: #ccc;
+            margin: 60px auto;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="nav-bg">
+    <nav class="navbar navbar-expand-lg container">
+        <a class="navbar-brand text-white fw-bold" href="#">Body Revolution</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link text-white" href="#testimoni">Testimoni</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#coach">Coach</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#challenge">Challenge</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container text-center fade-in">
+        <h1 class="display-4 fw-bold mb-4">Transformasi Tubuhmu dalam 10 Hari!</h1>
+        <p class="lead">Program diet personal dengan pendampingan intensif oleh coach profesional</p>
+        <a href="#challenge" class="btn btn-lg wa-button mt-3">Mulai Sekarang</a>
+    </div>
+</section>
+
+<!-- Motivational Section -->
+<section class="py-5 bg-accent3 text-white fade-in">
+    <div class="container text-center">
+        <h2 class="mb-4">"Apa pun yang dapat dibayangkan dan diyakini oleh pikiran, dapat dicapai."</h2>
+        <p>Napoleon Hill, Think and Grow Rich</p>
+    </div>
+</section>
+
+<!-- Challenge Section -->
+<section id="challenge" class="py-5 fade-in">
+    <div class="container">
+        <div class="challenge-section">
+            <div class="feature-icon"><i class="fas fa-trophy"></i></div>
+            <h3>10 Hari Fit Challenge</h3>
+            <ul class="list-unstyled d-inline-block text-start mx-auto">
+                <li class="mb-3"><i class="fas fa-check me-2"></i>Turun BB 1-5 kg</li>
+                <li class="mb-3"><i class="fas fa-check me-2"></i>Panduan makan & live class</li>
+                <li class="mb-3"><i class="fas fa-check me-2"></i>Challenge seru + hadiah</li>
+                <li class="mb-3"><i class="fas fa-check me-2"></i>Grup support eksklusif</li>
+                <li class="mb-4"><i class="fas fa-check me-2"></i>Monitoring harian</li>
+                <li>
+                    <a href="#coach" class="challenge-btn mt-3">Mau daftar? hubungi coach sekarang</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+<!-- Testimoni Section -->
+<section id="testimoni" class="py-5 fade-in">
+    <div class="container">
+        <h2 class="text-center mb-5">Testimoni Klien</h2>
+        <div id="testimonialCarousel" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="asset/testimoni 1.jpeg" class="d-block w-100 testimonial-img" alt="Testimoni 1">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+    </div>
+</section>
+
+<div class="section-line"></div>
+
+<!-- Coach Profile -->
+<section id="coach" class="py-5 fade-in">
+    <div class="container text-center">
+        <img src="asset/profil coach.jpeg" class="coach-img mb-4" alt="Coach">
+        <h2>dr Bastiana M Kes, Sp THT-BKL</h2>
+        <p class="text-muted mb-4">Dokter Spesialis & Edukator Gaya Hidup Sehat</p>
+        <a href="https://bit.ly/tanyadokterana" class="wa-button text-decoration-none">Hubungi via WhatsApp</a>
+        <div class="mt-4">
+            <a href="https://www.instagram.com/dokteranna/" class="text-dark social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@dokteranna" class="text-dark social-icon"><i class="fab fa-tiktok"></i></a>
+            <a href="#" class="text-dark social-icon"><i class="fab fa-facebook"></i></a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="fade-in">
+    <div class="container text-center">
+        <div class="mb-4">
+            <a href="https://www.instagram.com/dokteranna/" class="text-white social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@dokteranna" class="text-white social-icon"><i class="fab fa-tiktok"></i></a>
+            <a href="#" class="text-white social-icon"><i class="fab fa-facebook"></i></a>
+        </div>
+        <p>&copy; 2025 Body Revolution. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
